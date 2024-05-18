@@ -204,3 +204,23 @@
 
 //     if(number == )
 // }
+
+// funksiyaya bir reqem daxil edilir, yoxlamaq lazimdir bu hansisa ededin kvadratidir ya yox
+
+// function isNumberPowed(number){
+//     number = Number();
+//     let numberPow = Math.pow()
+// }
+
+// isNumberPowed(9, 115);
+
+
+// 
+// function mixedArrtask(arr1, arr2){
+//     let joinedArrs = arr1.concat(arr2);
+//     let sortedArr = joinedArrs.sort();
+//     let firstLastCutArr = sortedArr.splice(1, 5);
+//     return firstLastCutArr;
+// }
+
+// console.log(mixedArrtask([5,2,3,9], [2,9,1]));
