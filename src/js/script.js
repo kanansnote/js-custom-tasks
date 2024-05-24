@@ -240,7 +240,7 @@
 
 //         if (!(sortedArr.includes(i))) {
 //             newArr.push();
-//         }        
+//         }
 //     }
 
 //     console.log(newArr);
@@ -251,7 +251,7 @@
 
 // Task 3
 // function bölünənƏdədlər(num){
-//     let 
+//     let
 // }
 
 // console.log(bölünənƏdədlər(24)); // bölənlər [1,2,3,4,6,8,12,24], bölənlərin sayı - 8
@@ -348,3 +348,39 @@
 // }
 // console.log(xeberinQisaltmasi(news1, len1));   // Cüdo üzrə Azərbaycanın...
 // console.log(xeberinQisaltmasi(news2, len2));   // Şahdağda qarın hündürlüyü...
+
+// Edabit Tasks
+
+// numberSplit(4) ➞ [2, 2]
+
+// numberSplit(10) ➞ [5, 5]
+
+// numberSplit(11) ➞ [5, 6]
+
+// numberSplit(-9) ➞ [-5, -4]
+
+// function squared(b) {
+// 	return b * b;
+// }
+
+// squared(5);
+// squared(9);
+// squared(100);
+
+// function sortByLength(arr) {
+// 	 let sortedArr = arr.sort(function (a, b){return a.length-b.length});
+//      console.log(sortedArr);
+// }
+
+// sortByLength(["a", "ccc", "dddd", "bb"]) // ["a", "bb", "ccc", "dddd"]
+// sortByLength(["apple", "pie", "shortcake"]) // ["pie", "apple", "shortcake"]
+// sortByLength(["may", "april", "september", "august"]) // ["may", "april", "august", "september"]
+// sortByLength([]) // []
+
+// function minMax(arr) {
+// 	return arr.map((minAndMax);
+// }
+
+// minMax([1, 2, 3, 4, 5]) // [1, 5]
+// minMax([2334454, 5]) // [5, 2334454]
+// minMax([1]) // [1, 1]
