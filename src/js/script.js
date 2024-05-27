@@ -384,6 +384,7 @@
 
 // Codewars Tasks
 
+// Task 1
 // const binaryArrayToNumber = arr => {
 //   const binaryString = arr.join('');
 //   const number = parseInt(binaryString, 2);
@@ -394,7 +395,7 @@
 // console.log(binaryArrayToNumber([0, 0, 1, 0]));
 // console.log(binaryArrayToNumber([0, 0, 1, 1]));
 
-// Not Solved
+// Task 2 - Not Solved
 // function sortByValueAndIndex(array) {
 
 //     const newArr = array.slice();
@@ -413,3 +414,36 @@
 // console.log(sortByValueAndIndex([26, 2, 3, 4, 5]));
 // console.log(sortByValueAndIndex([9, 5, 1, 4, 3]));
 
+// Task 3
+// function abbrevName(name){
+
+//     const arr = name.split(' ');
+//     const uppercased = arr.map((a) => a.slice(0, 1).toUpperCase());
+//     const joined = uppercased.join('.');
+//     console.log(joined);
+
+// }
+
+// abbrevName("Sam Harris");
+// abbrevName("sam harris");
+// abbrevName("s harris");
+
+// Task 4
+// var countSheep = function (num) {
+//     let result = "";
+//     for (let i = 1; i <= num; i++) {
+//       result += i + "sheep...";
+//     }
+//     return result;
+// }
+  
+// console.log(countSheep(5));
+
+// Task 5
+// function findAverage(array) {
+//     let reducing = array.reduce((a, b) => a + b, 0);
+//     let average = reducing / array.length;
+//     return average;
+// }
+
+// console.log(findAverage([1,2,3]));
