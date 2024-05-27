@@ -195,7 +195,6 @@
 
 // shortFullName('Robin Singh');
 
-
 //
 
 // function checkPow(number){
@@ -286,19 +285,17 @@
 
 // }
 
-
 // sayiniYaziyaCevir(67);  // altmış yeddi
 // sayiniYaziyaCevir(82);  // səksən iki
-
 
 // ChatGPT kodu
 // function bolenleriVeSayisi(n) {
 //     // 1-dən n-ə qədər olan rəqəmlərdən ibarət array yaradırıq
 //     const numbers = Array.from({ length: n }, (_, i) => i + 1);
-    
+
 //     // `filter` metodu ilə bölənləri tapırıq
 //     const bolenler = numbers.filter(num => n % num === 0);
-    
+
 //     // Nəticələri ekrana yazdırırıq
 //     console.log(`Bölənlər: ${bolenler.join(', ')}`);
 //     console.log(`Bölənlərin sayı: ${bolenler.length}`);
@@ -315,7 +312,7 @@
 //             arr.push(i);
 //         }
 //     }
-    
+
 //     return `tam bolenler ${arr} ve bolenlerin sayi ${arr.length}`;
 // }
 
@@ -392,7 +389,27 @@
 //   const number = parseInt(binaryString, 2);
 //   return number;
 // };
-  
+
 // console.log(binaryArrayToNumber([0, 0, 0, 1]));
 // console.log(binaryArrayToNumber([0, 0, 1, 0]));
 // console.log(binaryArrayToNumber([0, 0, 1, 1]));
+
+// Not Solved
+// function sortByValueAndIndex(array) {
+
+//     const newArr = array.slice();
+
+// 	let sortedArray = newArr.sort((a, b) => {
+// 		const indexA = array.indexOf(a);
+// 		const indexB = array.indexOf(b);
+// 		return a * (indexA + 1) - b * (indexB + 1);
+// 	});
+
+// 	return sortedArray;
+// }
+
+// console.log(sortByValueAndIndex([1, 2, 3, 4, 5]));
+// console.log(sortByValueAndIndex([23, 2, 3, 4, 5]));
+// console.log(sortByValueAndIndex([26, 2, 3, 4, 5]));
+// console.log(sortByValueAndIndex([9, 5, 1, 4, 3]));
+
