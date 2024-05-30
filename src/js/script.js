@@ -395,19 +395,13 @@
 // console.log(binaryArrayToNumber([0, 0, 1, 0]));
 // console.log(binaryArrayToNumber([0, 0, 1, 1]));
 
-// Task 2 - Not Solved
+// Task 2
 // function sortByValueAndIndex(array) {
-
-//     const newArr = array.slice();
-
-// 	let sortedArray = newArr.sort((a, b) => {
-// 		const indexA = array.indexOf(a);
-// 		const indexB = array.indexOf(b);
-// 		return a * (indexA + 1) - b * (indexB + 1);
-// 	});
-
-// 	return sortedArray;
+//     return array.map((value, index) => [value * (index + 1), value]).sort((a, b) => a[0] - b[0]).map(value => value[1]);
 // }
+
+// console.log(sortByValueAndIndex([-22, -20, -15, -8, -21, -21, -27, +0, 3, 2, 28, 11, 18, 18, 27, 20]));
+// [-22, -21, -20, -15, -8, -21, -27, +0, 3, 2, 28, 11, 18, 27, 18, 20]
 
 // console.log(sortByValueAndIndex([1, 2, 3, 4, 5]));
 // console.log(sortByValueAndIndex([23, 2, 3, 4, 5]));
@@ -447,3 +441,56 @@
 // }
 
 // console.log(findAverage([1,2,3]));
+
+// Task 6
+
+// function sumMix(x){
+    
+
+    
+// }
+
+// console.log(sumMix([9, 3, '7', '3']), 22);
+// console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42);
+// console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
+
+// let arr = [1, 2, 3, 4, 5];
+// let mapped = arr.forEach((a) => a - 2);
+// console.log(mapped);
+
+// let arr = [1, 2, 3];
+// arr.forEach((index, value) => {
+//     arr[index] = value * 2; // Mutates the original array
+// });
+// console.log(arr); // Output: [2, 4, 6]
+
+// Task 7
+// function mergeArrays(arr1, arr2) {
+//     const arr = [...arr1, ...arr2].sort((a, b) => a - b).filter((value, index, array) => array.indexOf(value) == index);
+//     return arr;
+// }
+
+// console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+// Task 8
+// function mergeArrays(arr1, arr2) {
+//     return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+// }
+
+// console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+// Task 9
+// function powersOfTwo(n){
+//     // return [2] ** n;
+    
+//     // n repeat olunmalidir
+// }
+  
+// console.log(powersOfTwo(1));
+
+// Task 10
+// function solution(str){
+//     return str.split('').reverse().join('');
+// }
+
+// console.log((solution('world')));
