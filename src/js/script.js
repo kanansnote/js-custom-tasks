@@ -346,6 +346,30 @@
 // console.log(xeberinQisaltmasi(news1, len1));   // Cüdo üzrə Azərbaycanın...
 // console.log(xeberinQisaltmasi(news2, len2));   // Şahdağda qarın hündürlüyü...
 
+// Task 6
+
+// function isItLetter(l) {
+    
+//     const alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+//     const lowercased = l.toLowerCase();
+
+//     for (let index = 0; index < alphabets.length; index++) {
+
+//         if (lowercased.includes(alphabets[index])) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+        
+//     }
+
+// }
+
+// console.log(isItLetter('a')); // true
+// console.log(isItLetter('A')); // true
+// console.log(isItLetter('1')); // false
+// console.log(isItLetter('[')); // false
+
 // Edabit Tasks
 
 // numberSplit(4) ➞ [2, 2]
