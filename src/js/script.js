@@ -406,6 +406,14 @@
 // minMax([2334454, 5]) // [5, 2334454]
 // minMax([1]) // [1, 1]
 
+// Objects
+
+// Task 1
+
+// function getVoteCount(votes) {
+    
+// }
+
 // Codewars Tasks
 
 // Task 1
@@ -518,3 +526,13 @@
 // }
 
 // console.log((solution('world')));
+
+// Custom Tasks
+// Task 1
+// Reverse the array data using a loop and store the data in the array result. The expected output is: ['Homework', 20, 'Shopping', 10, 5].
+
+// function reverseArray(arr) {
+//     console.log(arr.reverse());
+// }
+
+// reverseArray([5, 10, 'Shopping', 20, 'Homework']);
