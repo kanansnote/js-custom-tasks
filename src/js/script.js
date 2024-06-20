@@ -349,7 +349,7 @@
 // Task 6
 
 // function isItLetter(l) {
-    
+
 //     const alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 //     const lowercased = l.toLowerCase();
 
@@ -360,7 +360,7 @@
 //         } else {
 //             return false;
 //         }
-        
+
 //     }
 
 // }
@@ -411,7 +411,7 @@
 // Task 1
 
 // function getVoteCount(votes) {
-    
+
 // }
 
 // Codewars Tasks
@@ -462,7 +462,7 @@
 //     }
 //     return result;
 // }
-  
+
 // console.log(countSheep(5));
 
 // Task 5
@@ -477,9 +477,7 @@
 // Task 6
 
 // function sumMix(x){
-    
 
-    
 // }
 
 // console.log(sumMix([9, 3, '7', '3']), 22);
@@ -514,10 +512,10 @@
 // Task 9
 // function powersOfTwo(n){
 //     // return [2] ** n;
-    
+
 //     // n repeat olunmalidir
 // }
-  
+
 // console.log(powersOfTwo(1));
 
 // Task 10
@@ -527,13 +525,23 @@
 
 // console.log((solution('world')));
 
-// Task 11 (Unsolved)
+// Task 11
 
-// function strCount(str, letter) {
-//     return str.match(new RegExp(letter, "g")).length;
+// function doubleChar(str) {
+// 	let result = "";
+
+// 	for (let item of str) {
+// 		if (!result.includes(item)) {
+// 			result += (item + item);
+//         } else {
+// 			result += (item + item);
+//         }
+//     }
+    
+//     return result;
 // }
 
-// console.log(strCount('Hello', 'o'));
+// console.log(doubleChar("Adidas"));
 
 // Custom Tasks
 // Task 1
