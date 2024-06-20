@@ -527,6 +527,14 @@
 
 // console.log((solution('world')));
 
+// Task 11 (Unsolved)
+
+// function strCount(str, letter) {
+//     return str.match(new RegExp(letter, "g")).length;
+// }
+
+// console.log(strCount('Hello', 'o'));
+
 // Custom Tasks
 // Task 1
 // Reverse the array data using a loop and store the data in the array result. The expected output is: ['Homework', 20, 'Shopping', 10, 5].
