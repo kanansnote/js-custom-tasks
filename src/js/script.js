@@ -477,22 +477,12 @@
 // Task 6
 
 // function sumMix(x){
-
+//     return x.map(item=>+item).reduce((acc,cur)=>acc + cur, 0);
 // }
 
-// console.log(sumMix([9, 3, '7', '3']), 22);
-// console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42);
-// console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
-
-// let arr = [1, 2, 3, 4, 5];
-// let mapped = arr.forEach((a) => a - 2);
-// console.log(mapped);
-
-// let arr = [1, 2, 3];
-// arr.forEach((index, value) => {
-//     arr[index] = value * 2; // Mutates the original array
-// });
-// console.log(arr); // Output: [2, 4, 6]
+// console.log(sumMix([9, 3, '7', '3'])); // 22
+// console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7])); // 42
+// console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0'])); // 41
 
 // Task 7
 // function mergeArrays(arr1, arr2) {
@@ -537,11 +527,157 @@
 // 			result += (item + item);
 //         }
 //     }
-    
+
 //     return result;
 // }
 
 // console.log(doubleChar("Adidas"));
+
+// Task 12 (Unsolved)
+
+// var lengthOfSequence = function (arr, n) {
+//     return arr.indexOf(n).length + arr.lastIndexOf(n).length;
+// };
+
+// Task 13
+
+// let arr = [1, 2, 3, 4, 5];
+// let mapped = arr.forEach((a) => a - 2);
+// console.log(mapped);
+
+// let arr = [1, 2, 3];
+// arr.forEach((index, value) => {
+//     arr[index] = value * 2; // Mutates the original array
+// });
+// console.log(arr); // Output: [2, 4, 6]
+
+// Task 14 (Unsolved)
+
+// function isToday(date) {
+// }
+
+// console.log(isToday());
+
+// Task 15 (Unsolved)
+// function solution(str) {
+//     const arr = str.split('');
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i += 2) {
+//         let pair = arr[i] + (arr[i + 1] || '_');
+//         result.push(pair);
+//     }
+
+//     return result;
+// }
+
+// console.log(solution("abcdef")); // ["ab", "cd", "ef"]
+// console.log(solution("abcdefg")); // ["ab", "cd", "ef", "g_"]
+// console.log(solution("")); // []
+
+// Task 16
+// class Solution {
+// 	static main() {
+// 		console.log("Hello World!");
+// 	}
+// }
+
+// Solution.main();
+
+// Task 17
+// function sumDigits(number) {
+// 	return Math.abs(number)
+// 		.toString()
+// 		.split("")
+// 		.reduce((a, b) => +a + +b);
+// }
+
+// console.log(sumDigits(10));
+// console.log(sumDigits(-32));
+
+// Task 18
+// function generateShape(integer) {
+//     const plusSign = "+";
+//     let shape = "";
+
+//     for (let index = 0; index < integer; index++) {
+//         shape += plusSign.repeat(integer);
+//         if (index < integer - 1) {
+//             shape += "\n";
+//         }
+//     }
+
+//     return shape;
+// }
+
+// console.log(generateShape(8));
+// console.log(generateShape(9));
+
+// Task 19
+// obfuscate = function (email) {
+// 	const array = email.split("");
+
+// 	for (let index = 0; index < array.length; index++) {
+// 		if (array[index].includes("@")) {
+// 			array[index] = " [at] ";
+// 		} else if (array[index].includes(".")) {
+// 			array[index] = " [dot] ";
+// 		}
+// 	}
+
+// 	return array.join("");
+// };
+
+// console.log(obfuscate("test@123.com")); // test [at] 123 [dot] com
+// console.log(obfuscate("test.test@123.com")); // test.test [at] 123 [dot] com
+
+// Task 20
+// function sumNoDuplicates(numList) {
+//     return numList
+//         .filter((item, index, arr) => arr.indexOf(item) === arr.lastIndexOf(item))
+//         .reduce((a, b) => a + b, 0);
+// }
+
+// console.log(sumNoDuplicates([1, 1, 2, 3])); // 5
+
+// Task 21
+// const sequenceSum = (begin, end, step) => {
+//     if (begin > end) return 0;
+
+//     let count = 0;
+
+//     for (let index = begin; index <= end; index += step) {
+//         count += index;
+//     }
+
+//     return count;
+// };
+
+// console.log(sequenceSum(2, 6, 2)); // 12
+// console.log(sequenceSum(1, 5, 1)); // 15
+// console.log(sequenceSum(1, 5, 3)); // 5
+// console.log(sequenceSum(5, 1, 1)); // 0 (begin is greater than end)
+
+// Task 22
+// function duplicateCount(text) {
+// 	const arr = text.toLowerCase().split("");
+// 	let newArr = [];
+
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) {
+// 			newArr.push(arr[i]);
+// 		}
+// 	}
+
+// 	return [...new Set(newArr)].length;
+// }
+
+// console.log(duplicateCount("")); //, 0);
+// console.log(duplicateCount("abcde")); //, 0);
+// console.log(duplicateCount("aabbcde")); //, 2);
+// console.log(duplicateCount("aabBcde")); //, 2,"should ignore case");
+// console.log(duplicateCount("Indivisibility")); //, 1)
+// console.log(duplicateCount("Indivisibilities")); //, 2, "characters may not be adjacent")
 
 // Custom Tasks
 // Task 1
@@ -552,3 +688,10 @@
 // }
 
 // reverseArray([5, 10, 'Shopping', 20, 'Homework']);
+
+// Task 2
+// const quiz = {
+//     question: 'Inside which HTML element do we put the JavaScript?',
+//     correct: '<script>',
+//     options: ['<style>', '<javascript>', '<scripting>'],
+// };
