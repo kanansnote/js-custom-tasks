@@ -551,12 +551,16 @@
 // });
 // console.log(arr); // Output: [2, 4, 6]
 
-// Task 14 (Unsolved)
+// Task 14
 
 // function isToday(date) {
+//     const today = new Date();
+//     return date.toDateString() === today.toDateString();
 // }
 
-// console.log(isToday());
+// console.log(isToday(today));
+// console.log(isToday(yesterday));
+// console.log(isToday(tomorrow));
 
 // Task 15 (Unsolved)
 // function solution(str) {
@@ -678,6 +682,44 @@
 // console.log(duplicateCount("aabBcde")); //, 2,"should ignore case");
 // console.log(duplicateCount("Indivisibility")); //, 1)
 // console.log(duplicateCount("Indivisibilities")); //, 2, "characters may not be adjacent")
+
+// Task 23
+// function range(start, step, stop) {
+// 	let array = [];
+
+// 	// If only one argument is provided, assume it's the stop value
+// 	if (arguments.length === 1) {
+// 		stop = start;
+// 		start = 1;
+// 		step = 1;
+// 	}
+// 	// If two arguments are provided, assume they are start and stop values
+// 	else if (arguments.length === 2) {
+// 		stop = step;
+// 		step = 1;
+// 	}
+
+// 	// Generate the range of numbers
+// 	for (let i = start; i <= stop; i += step) {
+// 		array.push(i);
+// 	}
+
+// 	return array;
+// }
+
+// console.log(range(5)); // [1, 2, 3, 4, 5]
+// console.log(range(3, 7)); // [3, 4, 5, 6, 7]
+// console.log(range(2, 3, 15)); // [2, 5, 8, 11, 14]
+
+// Task 24
+// function arr2bin(arr) {
+// 	return arr
+// 		.reduce((a, b) => (typeof b === "number" ? a + b : a), 0)
+// 		.toString(2);
+// }
+
+// console.log(arr2bin([1, 2]));
+// console.log(arr2bin([1, 2, 3, 4, 5]));
 
 // Custom Tasks
 // Task 1
