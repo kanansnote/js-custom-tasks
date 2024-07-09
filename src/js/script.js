@@ -472,6 +472,42 @@
 
 // console.log(preventChanges(obj)); // { noChanges: true }
 
+// Task 10
+
+// My Code
+// function relationToLuke(str) {
+//     const obj = {
+//         father: "Darth Vader",
+//         sister: "Leia",
+//         brother_in_law: "Han",
+//         droid: "R2D2",
+//     }
+
+//     console.log(`Luke, I am your ${obj[str]}.`);
+// }
+
+// relationToLuke("Darth Vader") // "Luke, I am your father."
+// relationToLuke("Leia") // "Luke, I am your sister."
+// relationToLuke("Han") // "Luke, I am your brother in law."
+
+// My code corrected by ChatGPT
+// function relationToLuke(str) {
+//     const obj = {
+//         "Darth Vader": "father",
+//         "Leia": "sister",
+//         "Han": "brother in law",
+//         "R2D2": "droid",
+//     };
+
+//     console.log(`Luke, I am your ${obj[str]}.`);
+// }
+
+// relationToLuke("Darth Vader"); // "Luke, I am your father."
+// relationToLuke("Leia"); // "Luke, I am your sister."
+// relationToLuke("Han"); // "Luke, I am your brother-in-law."
+// relationToLuke("R2D2"); // "Luke, I am your droid."
+
+
 // Codewars Tasks
 
 // Task 1
