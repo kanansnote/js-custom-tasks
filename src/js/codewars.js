@@ -317,3 +317,108 @@
 //     true,  false, false, true ,
 //     true,  true,  true,  true ,
 //     false, false, true,  true]));
+
+// Task 26
+
+// function areYouPlayingBanjo(name) {
+//     if (name.toLowerCase().startsWith('r')) {
+//         return `${name} plays banjo`;
+//     } else {
+//         return `${name} does not play banjo`;
+//     }
+// }
+
+// console.log(areYouPlayingBanjo("Adam")); // Adam does not play banjo
+// console.log(areYouPlayingBanjo("Rdam")); // Rdam does play banjo
+
+// Task 27
+
+// var replaceDots = function(str) {
+//     return str.replaceAll('.', '-');
+// }
+
+// console.log(replaceDots("one.two.three"));
+
+// Task 28
+// function hexToDec(hexString){
+//     return parseInt(hexString, 16);
+// }
+
+// console.log(hexToDec('1'));
+// console.log(hexToDec('FF'));
+
+// Task 29 (Unsolved)
+// function replaceCommon(string, letter) {
+//     const array = string.split(' ');
+
+//     // my -> m y
+//     // mom -> m o m
+
+//     for (let index = 0; index < array.length; index++) {
+//         for (let Lindex = 0; Lindex < array.length; Lindex++) {
+//             // return [array[index+1][Lindex], array[index][Lindex]]
+
+//             if (array[index+1][Lindex].includes(array[index][Lindex])){
+//                 return array[index][Lindex].replace(array[index][Lindex], letter)
+//             }
+//         }
+//     }        
+// }
+
+// console.log(replaceCommon('my mom loves me as never did', 't'));
+// console.log(replaceCommon('real talk bro', 'n'));
+// console.log(replaceCommon('great job go ahead', 'k'));
+
+// Task 30
+// function switchItUp(number){
+//     const words = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+
+//     for (let index = 0; index < words.length; index++) {
+//         return number.toString().split('').map(digit => words[parseInt(digit)]).join(' ');
+//     }
+// }
+
+// console.log(switchItUp(0));
+// console.log(switchItUp(1));
+// console.log(switchItUp(9));
+
+// Task 31
+// function remove(string) {  
+//     while (string.endsWith('!')) {
+//         string = string.slice(0, -1);
+//     }
+//     return string;
+// }
+
+// console.log(remove('Hi!!!'));
+// console.log(remove('Hi!!'));
+// console.log(remove('Hi!'));
+
+// Task 32
+// function sc(floor){
+//     if (floor >= 2 && floor <= 6) return 'Aa~ '.repeat(floor-1) + 'Pa! Aa!';
+//     else if (floor >= 6) return 'Aa~ '.repeat(floor-1) + 'Pa!';
+//     else return '';
+// }
+
+// console.log(sc(2));
+// console.log(sc(6));
+// console.log(sc(7));
+// console.log(sc(10));
+
+// Task 33
+// var isAnagram = function(test, original) {
+
+//     if (test.length !== original.length) {
+//         return false;
+//     }
+
+//     const sortedTest = test.toLowerCase().split('').sort().join(',');
+//     const sortedOriginal = original.toLowerCase().split('').sort().join(',');
+
+//     // return sortedTest == sortedOriginal;
+// };
+
+// console.log(isAnagram("foefet", "toffee"));
+// console.log(isAnagram("foefet", "boffee"));
+// console.log(isAnagram("Buckethead", "DeathCubeK"));
